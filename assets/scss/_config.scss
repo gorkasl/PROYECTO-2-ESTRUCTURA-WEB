@@ -1,0 +1,47 @@
+/* Estilos básicos de configuración de toda la web */
+
+/* reset */
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+/* fuentes */
+@font-face {
+    font-family: 'anton';
+    src: url('../fonts/Anton-Regular.ttf');
+}
+@font-face {
+    font-family: 'poppins';
+    src: url('../fonts/Poppins-Regular.ttf');
+}
+
+/* variables */
+$fuente01:'anton';
+$fuente02:'poppins';
+
+$color00: white;
+$color01: rgb(34, 34, 34);
+$color02: rgb(243, 160, 160);
+$color03: rgb(88, 189, 88);
+
+$tablet: 900px;
+$desktop: 1440px;
+
+/* estilos globales básicos de estructura*/
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+body, nav, header, main, footer, section{
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+    overflow: hidden;
+}
+nav, main, header, footer, section{
+    max-width: 2560px;
+}
