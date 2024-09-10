@@ -23,11 +23,42 @@ $fuente02:'poppins';
 
 $color00: white;
 $color01: rgb(34, 34, 34);
+$color01bis: rgb(148, 148, 148);
 $color02: rgb(243, 160, 160);
 $color03: rgb(88, 189, 88);
 
-$tablet: 900px;
-$desktop: 1440px;
+$tablet: 750px;
+$desktop: 1350px;
+
+$paddingTexto: 1.5rem;
+
+/* Estilos de textos y encabezados */
+h1{
+    font-size: 2rem;
+    font-family: $fuente01;
+}
+h2{
+    font-size: 1.8rem;
+    font-family: $fuente01;
+    letter-spacing: 2px;
+}
+p, a{
+    font-size: 0.9rem;
+    font-family: $fuente02;
+    line-height: 1.3rem;
+}
+cite{
+    padding: 0 $paddingTexto;
+    font-size: 1.2em;
+    font-family: $fuente02;
+    line-height: 2rem;
+    color: $color01bis;
+    border-left: 3px solid $color02;
+    span{
+        font-size: 4rem;
+        line-height: 1rem;
+    }
+}
 
 /* estilos globales básicos de estructura*/
 body{
@@ -40,8 +71,17 @@ body, nav, header, main, footer, section{
     width: 100%;
     max-width: 100%;
     min-width: 100%;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 nav, main, header, footer, section{
     max-width: 2560px;
+}
+main, section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+section{
+    row-gap: 2.5rem;
 }

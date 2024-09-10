@@ -20,6 +20,37 @@
   src: url("../fonts/Poppins-Regular.ttf");
 }
 /* variables */
+/* Estilos de textos y encabezados */
+h1 {
+  font-size: 2rem;
+  font-family: "anton";
+}
+
+h2 {
+  font-size: 1.8rem;
+  font-family: "anton";
+  letter-spacing: 2px;
+}
+
+p, a {
+  font-size: 0.9rem;
+  font-family: "poppins";
+  line-height: 1.3rem;
+}
+
+cite {
+  padding: 0 1.5rem;
+  font-size: 1.2em;
+  font-family: "poppins";
+  line-height: 2rem;
+  color: rgb(148, 148, 148);
+  border-left: 3px solid rgb(243, 160, 160);
+}
+cite span {
+  font-size: 4rem;
+  line-height: 1rem;
+}
+
 /* estilos globales básicos de estructura*/
 body {
   display: flex;
@@ -32,9 +63,70 @@ body, nav, header, main, footer, section {
   width: 100%;
   max-width: 100%;
   min-width: 100%;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 nav, main, header, footer, section {
   max-width: 2560px;
+}
+
+main, section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+section {
+  row-gap: 2.5rem;
+}
+
+.art01 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  row-gap: 2rem;
+}
+@media only screen and (min-width: 1350px) {
+  .art01 {
+    width: 80%;
+  }
+}
+.art01 > :nth-child(1) {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  row-gap: 2rem;
+}
+@media only screen and (min-width: 750px) {
+  .art01 > :nth-child(1) {
+    justify-content: space-between;
+  }
+}
+.art01 > :nth-child(1) > img {
+  width: 100%;
+  object-fit: cover;
+  object-position: center center;
+}
+.art01 > :nth-child(1) > :nth-child(2) {
+  width: 100%;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  row-gap: 1rem;
+}
+.art01 > :nth-child(2) {
+  margin: 0 1.5rem;
+}
+.art01 > :nth-child(3) {
+  width: 100%;
+  object-fit: cover;
+  object-position: center center;
 }/*# sourceMappingURL=contacto.css.map */
