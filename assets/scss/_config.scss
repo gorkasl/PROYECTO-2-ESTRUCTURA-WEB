@@ -34,30 +34,44 @@ $paddingTexto: 1.5rem;
 
 /* Estilos de textos y encabezados */
 h1{
-    font-size: 2rem;
+    font-size: 2.5rem;
+    font-family: $fuente01;
+}
+h2, h3{
     font-family: $fuente01;
 }
 h2{
     font-size: 1.8rem;
-    font-family: $fuente01;
-    letter-spacing: 2px;
 }
-p, a{
-    font-size: 0.9rem;
+h3{
+    font-size: 1.4rem;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+a, p, cite, span{
     font-family: $fuente02;
-    line-height: 1.3rem;
+}
+a, p{
+    font-size: 0.9rem;
+    @media screen and (min-width: $tablet){
+        &{
+            font-size: 1rem;
+        }
+    }
+    @media screen and (min-width: $desktop){
+        &{
+            font-size: 1.1rem;
+        }
+    }
 }
 cite{
+    margin: 0 $paddingTexto;
     padding: 0 $paddingTexto;
-    font-size: 1.2em;
-    font-family: $fuente02;
-    line-height: 2rem;
+    font-size: 1.3rem;
     color: $color01bis;
     border-left: 3px solid $color02;
-    span{
-        font-size: 4rem;
-        line-height: 1rem;
-    }
 }
 
 /* estilos globales básicos de estructura*/
